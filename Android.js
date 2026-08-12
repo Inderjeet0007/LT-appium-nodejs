@@ -18,10 +18,10 @@ const accessKey = process.env.LT_ACCESS_KEY || "accessKey";
 const desiredCapabilities = {
   "app": process.env.LT_APP_URL, // Enter the 'app_url' here.
   "build": "Proverbial Test",
-  "name": `${device} - ${osVersion} | Exploring options`,
-  "deviceName": device,
-  "platformName": os,
-  "platformVersion": osVersion,
+  "name": `Galaxy S25 - 15 | Exploring options`,
+  "deviceName": "Galaxy S25",
+  "platformName": "android",
+  "platformVersion": "15",
   "visual": true,
 	"network": true,
 	"video": true,
@@ -30,7 +30,7 @@ const desiredCapabilities = {
   "accessibility": true,
   "devicelog": true,
   "autoGrantPermissions": true,
-  "enableBiometricsAuthentication": true,
+  // "enableBiometricsAuthentication": true,
   // "enableBluetooth": true,
   "appProfiling": true,
   "advancedProfiling": true
