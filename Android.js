@@ -16,24 +16,24 @@ const accessKey = process.env.LT_ACCESS_KEY || "accessKey";
  * Capabilities to be passed while running the test.
  */
 const desiredCapabilities = {
-  "app": process.env.LT_APP_URL, // Enter the 'app_url' here.
-  "build": "Proverbial Test",
-  "name": `Galaxy S25 - 15 | Exploring options`,
-  "deviceName": "Galaxy S25",
-  "platformName": "android",
-  "platformVersion": "15",
-  "visual": true,
+	"app": process.env.LT_APP_URL,
+	"build": "Proverbial Test",
+	"name": `Galaxy S25 - 15 | Exploring options`,
+	"deviceName": "Galaxy S25",
+	"platformName": "android",
+	"platformVersion": "15",
+	"visual": true,
 	"network": true,
 	"video": true,
 	"isRealMobile": true,
 	"console": true,
-  "accessibility": true,
-  "devicelog": true,
-  "autoGrantPermissions": true,
-  // "enableBiometricsAuthentication": true,
-  // "enableBluetooth": true,
-  "appProfiling": true,
-  "advancedProfiling": true
+	"accessibility": true,
+	"devicelog": true,
+	"autoGrantPermissions": true,
+	"appProfiling": true,
+	"advancedProfiling": true,
+	"tunnel": true,
+	"tunnelName: process.env.LT_TUNNEL_NAME
 };
 
 const driver = wd.promiseRemote(
