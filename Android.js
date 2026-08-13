@@ -16,7 +16,7 @@ const accessKey = process.env.LT_ACCESS_KEY || "accessKey";
  * Capabilities to be passed while running the test.
  */
 const desiredCapabilities = {
-	"app": process.env.LT_APP_URL,
+	"app": process.env.LAMBDATEST_APP_URL,
 	"build": "Proverbial Test",
 	"name": `Galaxy S25 - 15 | Exploring options`,
 	"deviceName": "Galaxy S25",
