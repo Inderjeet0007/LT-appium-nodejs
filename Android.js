@@ -33,7 +33,7 @@ const desiredCapabilities = {
 	"appProfiling": true,
 	"advancedProfiling": true,
 	"tunnel": true,
-	"tunnelName: process.env.LT_TUNNEL_NAME
+	"tunnelName": process.env.LT_TUNNEL_NAME
 };
 
 const driver = wd.promiseRemote(
